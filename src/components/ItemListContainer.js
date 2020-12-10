@@ -1,9 +1,11 @@
 import React from "react"
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
+    
+    
     return(
     
-    <p>Bienvenidos a Promosud, podes buscar lo que necesitas segun la categoria.</p>
+    <p>{greeting}</p>
     )
 }
 

@@ -5,7 +5,9 @@ const App = () => {
   return(
       <>
           <NavBar/>
-          <ItemListContainer/>
+          <ItemListContainer
+          greeting="Bienvenidos a Promosud, podes buscar lo que necesitas segun la categoria."
+          />
       </>
   )
 }
