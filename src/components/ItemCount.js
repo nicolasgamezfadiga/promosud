@@ -9,7 +9,7 @@ const ItemCount = ({stock, initial}) => {
        if(sumarStock < stock){
         setSuma(sumarStock+1)
        }
-    }   
+    }    
        const onRemove = () => {
         if(sumarStock > initial){
          setSuma(sumarStock-1)

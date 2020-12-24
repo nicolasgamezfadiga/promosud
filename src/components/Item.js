@@ -1,15 +1,18 @@
 import React from "react"
 
 
-const Item = ({info})=> {
+const Item = ({id, title, description, price})=> {
 
+   
 return(
     <>
-                <ul>
-                {info.map((elemento,indice)=>{ 
-                    return <li key={indice}>{elemento}</li>
-                 })}
-                 </ul>
+
+           <p>id:{id}</p>
+           <p>titulo:{title}</p>
+           <p>description:{description}</p>
+           <p>precio:{price}</p>
+
+        
     </>
 
 )
