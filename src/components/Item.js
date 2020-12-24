@@ -6,13 +6,12 @@ const Item = ({id, title, description, price})=> {
    
 return(
     <>
-
-           <p>id:{id}</p>
-           <p>titulo:{title}</p>
-           <p>description:{description}</p>
-           <p>precio:{price}</p>
-
-        
+         <ul>
+           <li>id:{id}</li>
+           <li>titulo:{title}</li>
+           <li>description:{description}</li>
+           <li>precio:{price}</li>
+           </ul>
     </>
 
 )
