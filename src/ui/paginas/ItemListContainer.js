@@ -11,11 +11,11 @@ const ItemListContainer = () => {
    
     useEffect(()=>{
             if(id){
-            fetch(`./items.json?id=${id}`)
+            fetch(`http://localhost:3000/items.json?categoryId=${id}`)
             .then(res=>res.json())
             .then(res=>setCategoria(res))
             }else{
-            fetch(`./items.json`)
+            fetch(`http://localhost:3000/items.json`)
             .then(res=>res.json())
             .then(res=>setCategoria(res))
             }
@@ -29,7 +29,7 @@ const ItemListContainer = () => {
                 return(
                     <div>
                         <h2>{cat.title}</h2>
-                       
+                        <p>{cat.categoryId}</p>
                     </div>
                 )
             })}
