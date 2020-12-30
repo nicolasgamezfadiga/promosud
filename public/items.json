@@ -1,0 +1,30 @@
+    [
+        {
+        "id":1, 
+        "categoryId": 1, 
+        "title": "ventilador", 
+        "description": "ventilador de pie", 
+        "price": "900" 
+        },
+        {
+        "id":2, 
+        "categoryId": 1,
+        "title": "mate", 
+        "description": "set de mate", 
+        "price": "400"
+        },
+        {
+        "id":3, 
+        "categoryId": 2, 
+        "title": "tripode", 
+        "description": "tripode flexible", 
+        "price": "700"
+        },
+        {
+        "id":4, 
+        "categoryId": 2,
+        "title": "inflable",
+        "description": "salvavidas de dona",
+        "price": "1200"
+        }
+    ]
