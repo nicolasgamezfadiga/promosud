@@ -1,0 +1,4 @@
+    [{"id":1, "categoryId": "elecetro", "title": "ventilador", "description": "ventilador de pie", "price": "900" },
+    {"id":2, "categoryId": "otros", "title": "mate", "description": "set de mate", "price": "400"},
+    {"id":3, "categoryId": "elecetro", "title": "tripode", "description": "tripode flexible", "price": "700"},
+    {"id":4, "categoryId": "otros","title": "inflable", "description": "salvavidas de dona", "price": "1200"}]
