@@ -8,16 +8,19 @@ const ItemListContainer = () => {
     const [categoria,setCategoria] = useState([])
     
     const{id} = useParams()
+    
    
     useEffect(()=>{
             if(id){
-            fetch(`http://localhost:3000/items.json?categoryId=${id}`)
+            fetch(`https://5ff3bc2e16cf4f0017c1f5ed.mockapi.io/producto?categoryId=${id}`)
             .then(res=>res.json())
             .then(res=>setCategoria(res))
+            console.log(categoria)
             }else{
-            fetch(`http://localhost:3000/items.json`)
+            fetch(`https://5ff3bc2e16cf4f0017c1f5ed.mockapi.io/producto`)
             .then(res=>res.json())
             .then(res=>setCategoria(res))
+            console.log(categoria)
             }
     },[id])
 
@@ -29,7 +32,8 @@ const ItemListContainer = () => {
                 return(
                     <div>
                         <h2>{cat.title}</h2>
-                        <p>{cat.categoryId}</p>
+                        <p>{cat.id}</p>
+                        
                     </div>
                 )
             })}
